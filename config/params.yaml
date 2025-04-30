@@ -1,0 +1,14 @@
+project_name: auto_ml_ops_agent
+data:
+  raw_path: data/raw.csv
+  cleaned_path: data/cleaned.csv
+model:
+  type: random_forest
+  save_path: models/best_model.pkl
+training:
+  test_size: 0.2
+  random_state: 42
+  scoring: f1
+deployment:
+  host: 127.0.0.1
+  port: 8000
